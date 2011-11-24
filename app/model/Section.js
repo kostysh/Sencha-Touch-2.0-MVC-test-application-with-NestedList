@@ -2,8 +2,7 @@ Ext.define('Myapp.model.Section', {
     extend: 'Ext.data.Model',
     fields: [
         {name: 'id', type: 'string'},
-        {name: 'name', type: 'string'},
-        {name: 'items', type: 'auto'}
+        {name: 'text', type: 'string'}
     ],
         
     hasMany: {

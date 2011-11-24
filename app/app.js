@@ -4,9 +4,5 @@ Ext.Loader.setConfig({
 
 Ext.application({
     name: 'Myapp',
-    controllers: ['Main'],
-    
-    launch: function() {
-        Ext.create('Myapp.view.Homepage');
-    }
+    controllers: ['Main']
 });

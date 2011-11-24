@@ -14,8 +14,7 @@ Ext.define('Myapp.view.Catalog', {
             
             {
                 xtype: 'nestedlist',
-                store: 'Myapp.store.Section',
-                displayField: 'name'
+                store: 'Section'
             }
                         
         ]

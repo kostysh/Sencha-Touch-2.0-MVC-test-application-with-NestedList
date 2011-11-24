@@ -10,7 +10,8 @@ Ext.define('Myapp.store.Section', {
         url: 'data/data.json',
         reader: {
             type: 'json',
-            root: 'items'
+            root: 'items',
+            idProperty: 'id'
         }
     }
 });

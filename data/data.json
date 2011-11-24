@@ -2,36 +2,36 @@
     "items": [
         {
             "id": "id1",
-            "name": "Section #1",
+            "text": "Section #1",
             
             "products": [
                 {
                     "id": "pr11",
-                    "name": "Product #1"
+                    "text": "Product #1"
                 },
                 {
                     "id": "pr12",
-                    "name": "Product #2"
+                    "text": "Product #2"
                 }
             ]
         },        
         {
             "id": "id2",
-            "name": "Section #2",
+            "text": "Section #2",
             
             "items": [
                 {
                     "id": "id22",
-                    "name": "Section #3",
+                    "text": "Section #3",
                     
                     "products": [
                         {
                             "id": "pr21",
-                            "name": "Product #3"
+                            "text": "Product #3"
                         },
                         {
                             "id": "pr22",
-                            "name": "Product #4"
+                            "text": "Product #4"
                         }					
                     ]
                 }   

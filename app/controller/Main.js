@@ -15,6 +15,7 @@ Ext.define('Myapp.controller.Main', {
     stores: ['Section'],
     
     init: function() {
+        Ext.create('Myapp.view.Homepage');
         
         this.control({
             //some bindings here

@@ -3,8 +3,8 @@ Ext.define('Myapp.model.Product', {
     
     fields: [
         {name: 'id', type: 'string'},
-        {name: 'name', type: 'string'}
+        {name: 'text', type: 'string'}
     ],
     
-    belongsTo: 'items'
+    belongsTo: 'Myapp.model.Section'
 });
