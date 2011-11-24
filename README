@@ -2,5 +2,9 @@ This is small test of Sencha Touch 2.0 MVC with NestedList.
 download your Sencha from http://cdn.sencha.io/touch/sencha-touch-2-pr2.zip
 and place it to /touch folder 
 
-Current version: 0.1
+version 0.1: 
 NestedList not worked :)))
+
+version 0.2: 
+Changed structure. NestedList now is item of TabPanel on Viewport.
+NestedList now works but weird.

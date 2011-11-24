@@ -1,4 +1,4 @@
-Ext.define('Myapp.view.Homepage', {
+Ext.define('Myapp.view.Viewport', {
     extend: 'Ext.tab.Panel',
     
     config: {
@@ -17,11 +17,19 @@ Ext.define('Myapp.view.Homepage', {
 
         items: [
             {
+                title: 'home',
+                iconCls: 'home',
                 xtype : 'welcomescreen'                 
             },
 
             {
-                xtype : 'catalog'
+                title: 'My catalog',
+                iconCls: 'bookmarks',
+                xtype: 'nestedlist',
+                store: 'Section',
+                getItemTextTpl: function(node) {
+                    return '[{id}]: {name}';
+                }
             }
         ]
     }

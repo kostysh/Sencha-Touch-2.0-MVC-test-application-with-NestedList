@@ -2,36 +2,37 @@
     "items": [
         {
             "id": "id1",
-            "text": "Section #1",
+            "name": "Section #1",
             
             "products": [
                 {
                     "id": "pr11",
-                    "text": "Product #1"
+                    "name": "Product #1"
                 },
                 {
                     "id": "pr12",
-                    "text": "Product #2"
+                    "name": "Product #2"
                 }
             ]
         },        
         {
             "id": "id2",
-            "text": "Section #2",
+            "name": "Section #2",
+            "leaf": true,
             
             "items": [
                 {
-                    "id": "id22",
-                    "text": "Section #3",
+                    "id": "id3",
+                    "name": "Section #3",
                     
                     "products": [
                         {
                             "id": "pr21",
-                            "text": "Product #3"
+                            "name": "Product #3"
                         },
                         {
                             "id": "pr22",
-                            "text": "Product #4"
+                            "name": "Product #4"
                         }					
                     ]
                 }   

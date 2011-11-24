@@ -2,20 +2,18 @@ Ext.define('Myapp.controller.Main', {
     extend: 'Ext.app.Controller',
     
     views: [
-        'Homepage',
-        'Welcomescreen',
-        'Catalog'
+        'Viewport',
+        'Welcomescreen'
     ],
     
     models: [
-        'Product',
         'Section'        
     ],
     
     stores: ['Section'],
     
     init: function() {
-        Ext.create('Myapp.view.Homepage');
+        Ext.create('Myapp.view.Viewport');
         
         this.control({
             //some bindings here

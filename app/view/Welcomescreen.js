@@ -3,9 +3,6 @@ Ext.define('Myapp.view.Welcomescreen', {
     xtype: 'welcomescreen',
         
     config: {
-        title: 'home',
-        iconCls: 'home',
-    
         defaults: {
             styleHtmlContent: true
         },

@@ -7,11 +7,10 @@ Ext.define('Myapp.store.Section', {
     
     proxy: {
         type: 'ajax',
-        url: 'data/data.json',
+        url: 'data/data2.json',
         reader: {
             type: 'json',
-            root: 'items',
-            idProperty: 'id'
+            root: 'items'
         }
     }
 });
