@@ -1,5 +1,8 @@
 Sencha Touch 2.0 MVC application test with NestedList component.
 
+version 0.3:
+WOW! It works! Wait for some cool features in next version.
+
 version 0.2: 
 Changed structure. NestedList now is item of TabPanel on Viewport.
 NestedList now works but weird.

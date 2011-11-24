@@ -27,8 +27,9 @@ Ext.define('Myapp.view.Viewport', {
                 iconCls: 'bookmarks',
                 xtype: 'nestedlist',
                 store: 'Section',
+                displayField: 'name',
                 getItemTextTpl: function(node) {
-                    return '[{id}]: {name}';
+                    return '{' + this.getDisplayField() + '}<tpl if="leaf !== true">/</tpl>';
                 }
             }
         ]
