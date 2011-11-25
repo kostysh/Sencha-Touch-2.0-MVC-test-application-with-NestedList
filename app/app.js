@@ -6,7 +6,7 @@
  *
  * @author Constantine V. Smirnov kostysh(at)gmail.com
  * @date 20111124
- * @version 0.3
+ * @version 0.4
  *
  * @requires touch/sencha-touch-all-debug-w-comments.js (version 2.0 up)
  * @requires touch/resources/css/sencha-touch.css
