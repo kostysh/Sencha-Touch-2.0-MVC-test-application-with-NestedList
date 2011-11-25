@@ -1,42 +1,105 @@
 {
     "items": [
         {
-            "id": "id1",
+            "id": 1,
             "name": "Section #1",
-            
+            "leaf": true,            
             "products": [
                 {
-                    "id": "pr11",
+                    "id": 8,
                     "name": "Product #1"
                 },
                 {
-                    "id": "pr12",
+                    "id": 9,
                     "name": "Product #2"
                 }
             ]
         },        
         {
-            "id": "id2",
+            "id": 2,
             "name": "Section #2",
-            "leaf": true,
             
             "items": [
                 {
-                    "id": "id3",
+                    "id": 3,
                     "name": "Section #3",
-                    
+                    "leaf": true,
                     "products": [
                         {
-                            "id": "pr21",
+                            "id": 10,
                             "name": "Product #3"
                         },
                         {
-                            "id": "pr22",
+                            "id": 11,
                             "name": "Product #4"
-                        }					
+                        }
                     ]
-                }   
+                },
+                {
+                    "id": 4,
+                    "name": "Section #4",
+                    "leaf": true,
+                    "products": [
+                        {
+                            "id": 12,
+                            "name": "Product #5"
+                        },
+                        {
+                            "id": 13,
+                            "name": "Product #6"
+                        }
+                    ]
+                },
+                {
+                    "id": 5,
+                    "name": "Section #5",
+                    "leaf": true,
+                    "products": [
+                        {
+                            "id": 14,
+                            "name": "Product #7"
+                        }
+                    ]
+                },
+                {
+                    "id": 6,
+                    "name": "Section #6",
+                    "leaf": true,
+                    "products": [
+                        {
+                            "id": 15,
+                            "name": "Product #8"
+                        },
+                        {
+                            "id": 16,
+                            "name": "Product #9"
+                        },
+                        {
+                            "id": 17,
+                            "name": "Product #10"
+                        }
+                    ]
+                }
             ]             
+        },
+        {
+            "id": 7,
+            "name": "Section #7",
+            "leaf": true,
+            "products": [
+                {
+                    "id": 18,
+                    "name": "Product #11"
+                },
+                {
+                    "id": 19,
+                    "name": "Product #12"
+                },
+                {
+                    "id": 20,
+                    "name": "Product #13"
+                }
+            ]
         }
     ]		
 }

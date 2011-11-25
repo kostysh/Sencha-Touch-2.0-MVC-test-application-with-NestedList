@@ -1,13 +1,13 @@
-Ext.define('Myapp.store.Section', {
+Ext.define('Myapp.store.Sections', {
     extend: 'Ext.data.TreeStore',
-    model: 'Myapp.model.Section',
+    model: 'Myapp.model.Sectionlist',
     
     autoLoad: true,
     root: {},
     
     proxy: {
         type: 'ajax',
-        url: 'data/data2.json',
+        url: 'data/data.json',
         reader: {
             type: 'json',
             root: 'items'

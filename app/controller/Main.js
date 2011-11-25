@@ -7,10 +7,11 @@ Ext.define('Myapp.controller.Main', {
     ],
     
     models: [
-        'Section'        
+        'Sectionlist',
+        'Productlist'
     ],
     
-    stores: ['Section'],
+    stores: ['Sections'],
     
     init: function() {
         Ext.create('Myapp.view.Viewport');

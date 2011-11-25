@@ -10,7 +10,7 @@ Ext.define('Myapp.view.Welcomescreen', {
         items: [
             {
                 xtype: 'container',
-                html: '<h2>Hello world!!!</h2>'
+                html: '<h2>Hey dude! NestList at the next door!!!</h2>'
             }
         ]
     }
