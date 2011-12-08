@@ -1,5 +1,11 @@
 Sencha Touch 2.0 MVC application test with NestedList component.
 
+version 0.4.1:
+Clearer application structure. Event handlers are transferred to the controller.
+Now, more accurately matches the architecture of ST2 MVC. 
+But the error "has no method 'isLeaf'" is present, and yet 
+I have no idea how to fix it. Need help.
+
 version 0.4:
 Products in data.json + detailCard with Products list for nested leafs.
 Error occured if tap on products list
