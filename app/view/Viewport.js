@@ -1,9 +1,9 @@
 Ext.define('Myapp.view.Viewport', {
     extend: 'Ext.tab.Panel',
-    
+        
     config: {
         fullscreen: true,
-
+        
         tabBar: {
             docked: 'bottom',
             layout: {
@@ -25,7 +25,7 @@ Ext.define('Myapp.view.Viewport', {
             {
                 title: 'My catalog',
                 iconCls: 'bookmarks',
-                xtype: 'sectionlist'
+                xtype: 'sectionslist'
             }
         ]
     }

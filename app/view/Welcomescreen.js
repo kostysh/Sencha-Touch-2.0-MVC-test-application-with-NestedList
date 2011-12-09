@@ -10,7 +10,8 @@ Ext.define('Myapp.view.Welcomescreen', {
         items: [
             {
                 xtype: 'container',
-                html: '<h2>Hey dude! NestList at the next door!!!</h2>'
+                html: '<h2>NestedList component in Sencha Touch 2.0 '+
+                      'application architecture</h2>'
             }
         ]
     }

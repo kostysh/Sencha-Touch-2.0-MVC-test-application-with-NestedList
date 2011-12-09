@@ -1,6 +1,6 @@
 Ext.define('Myapp.store.Sections', {
     extend: 'Ext.data.TreeStore',
-    model: 'Myapp.model.Sectionlist',
+    model: 'Myapp.model.Sections',
     
     root: {},
     
