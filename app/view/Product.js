@@ -20,6 +20,7 @@ Ext.define('Myapp.view.Product', {
                 xtype: 'fieldset',
                 title: '',
                 id: 'productFieldset',
+                
                 items: [
                     {
                         xtype: 'hiddenfield',
@@ -46,6 +47,7 @@ Ext.define('Myapp.view.Product', {
             {
                 docked: 'bottom',
                 xtype: 'toolbar',
+                
                 items: [
                     {
                         text: 'Close',
