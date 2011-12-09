@@ -2,8 +2,8 @@ Sencha Touch 2.0 MVC application test with NestedList component.
 
 version 0.5:
 Refactoring. Now more simpler. Product listed in NestedList and product details 
-displays as Form.Panel. No crtical errors, some [DEPRECATE] warnings (depends on
-current version of ST)
+displays as Form.Panel. No critical errors, some [DEPRECATE] warnings 
+(depends on current version of ST)
 
 version 0.4.1:
 Clearer application structure. Event handlers are transferred to the controller.
