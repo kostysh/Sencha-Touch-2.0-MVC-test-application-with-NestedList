@@ -7,14 +7,23 @@
  */
 @mixin sencha-form-sliders {
 
+  .x-slider-field, .x-toggle-field {
+    .x-component-outer {
+      margin: $form-spacing;
+    }
+  }
+
   .x-slider,
   .x-toggle {
-    .x-component-outer {
       position: relative;
       height: $form-thumb-size;
-      margin: $form-spacing;
       min-height: 0;
       min-width: 0;
+
+    > * {
+        position: absolute;
+        width: 100%;
+        height: 100%;
     }
   }
 
@@ -32,7 +41,7 @@
     }
 
     // Create the slider track
-    .x-slider .x-component-outer:after {
+    .x-slider:after {
       @include insertion(auto, $form-slider-size, $form-toggle-size / 2 - $form-slider-size/2 + $form-spacing/2 - $form-thumb-space / 2, 0);
       right: 0;
       margin: 0 $form-toggle-size/2;
@@ -66,7 +75,7 @@
     }
 
     // Create the slider track
-    .x-slider .x-component-outer:after {
+    .x-slider:after {
       @include insertion(auto, $form-slider-size, $form-toggle-size / 2 - $form-slider-size/2 + $form-spacing/2 - $form-thumb-space / 2, 0);
       right: 0;
       margin: 0 $form-toggle-size/2;
@@ -78,8 +87,7 @@
     }
   }
 
-  .x-toggle .x-component-outer {
-    margin: $form-spacing;
+  .x-toggle {
     width: $form-thumb-size * 2;
     @if $include-border-radius { @include border-radius($form-thumb-size/2); }
     overflow: hidden;
@@ -132,7 +140,7 @@
     }
   }
 
-  .x-toggle-on.x-component-outer {
+  .x-toggle-on {
     @include background-gradient($confirm-color, 'recessed');
   }
 

@@ -14,10 +14,8 @@ html, body {
   -webkit-text-size-adjust: none;
 }
 
-.x-desktop {
-    html, body {
-        overflow: hidden;
-    }
+body.x-desktop {
+  overflow: hidden;
 }
 
 *, *:after, *:before {
@@ -25,6 +23,7 @@ html, body {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-user-select: none;
   -webkit-touch-callout: none;
+  -webkit-user-drag: none;
 }
 
 .x-ios.x-tablet .x-landscape * {
@@ -81,11 +80,9 @@ input, textarea {
   margin-bottom: 0px;
 }
 
-.x-draggable {
-  z-index: 1;
-}
-
 .x-mask {
+  $min-width: 8.5em;
+
   position: absolute;
   top: 0;
   left: 0;
@@ -104,8 +101,11 @@ input, textarea {
     background-color: rgba(0, 0, 0, 0.5);
   }
 
+  &.x-mask-transparent {
+    background-color: transparent;
+  }
+
   .x-mask-inner {
-    display: none;
     background: rgba(0, 0, 0, .25);
     color: #fff;
     text-align: center;
@@ -120,33 +120,27 @@ input, textarea {
     @include box-orient(vertical);
     @include box-align(center);
     @include box-pack(center);
-    width: 8.5em;
-    height: 8.5em;
+    width: 100%;
+    min-width: $min-width;
+    height: $min-width;
   }
 
-  .x-mask-msg {
-    @include bevel-text;
-    -webkit-box-flex: 0 !important;
-  }
-
-  &.x-mask-loading,
-  &.x-mask-text {
-    .x-mask-inner {
-      display: block;
-    }
-  }
-
-  &:not(.x-mask-loading) {
+  &.x-indicator-hidden {
     .x-loading-spinner-outer {
       display: none;
     }
   }
 
-  &:not(.x-mask-text) {
-    .x-mask-msg {
-      display: none;
-    }
+  .x-mask-message {
+    @include bevel-text;
+    -webkit-box-flex: 0 !important;
+    max-width: 13em;
+    min-width: $min-width;
   }
+}
+
+.x-draggable {
+  z-index: 1;
 }
 
 .x-dragging {

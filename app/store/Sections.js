@@ -1,6 +1,7 @@
 Ext.define('Myapp.store.Sections', {
     extend: 'Ext.data.TreeStore',
     model: 'Myapp.model.Sections',
+    autoLoad: true,
     
     root: {},
     

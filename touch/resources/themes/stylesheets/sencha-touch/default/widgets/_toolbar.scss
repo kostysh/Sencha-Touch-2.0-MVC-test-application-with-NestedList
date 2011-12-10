@@ -60,11 +60,25 @@ $include-toolbar-uis: $include-default-uis !default;
     overflow: hidden;
     text-overflow: ellipsis;
     margin: 0 0.3em;
+    max-width: 100%;
+
+    .x-innerhtml {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      padding: 0 .3em;
+    }
   }
 
   @if $include-toolbar-uis {
     @include sencha-toolbar-ui('dark', darken($base-color, 10%));
     @include sencha-toolbar-ui('light', $base-color);
+  }
+
+  .x-navigation-bar {
+    .x-container {
+      overflow: visible;
+    }
   }
 }
 

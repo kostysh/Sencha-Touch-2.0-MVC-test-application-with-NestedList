@@ -6,6 +6,7 @@
 @mixin sencha-msgbox {
   .x-msgbox {
     min-width: 15em;
+    max-width: 20em;
     padding: 0.8em;
     -webkit-box-shadow: rgba(#000, .4) 0 .1em .5em;
     @if $include-border-radius { @include border-radius($panel-border-radius); }
@@ -14,6 +15,10 @@
     .x-title {
       font-size: .9em;
       line-height: 1.4em;
+    }
+
+    .x-body {
+      background:transparent !important;
     }
 
     .x-toolbar {
@@ -55,6 +60,7 @@
     font-size: .9em;
     text-align: center;
     padding: 6px 0;
+    line-height: 1.4em;
   }
 
   .x-msgbox-buttons {

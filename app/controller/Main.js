@@ -51,13 +51,15 @@ Ext.define('Myapp.controller.Main', {
             }
         });
         
-        var sectionsStore = this.getSectionsStore();
-        sectionsStore.on({
-            scope: this,
-            load: 'onSectionsStoreLoad'
-        });
+        this.getViewport();
         
-        sectionsStore.load();
+//        var sectionsStore = this.getSectionsStore();
+//        sectionsStore.on({
+//            scope: this,
+//            load: 'onSectionsStoreLoad'
+//        });
+//        
+//        sectionsStore.load();
     },
     
     onSectionsStoreLoad: function() {
