@@ -30,8 +30,8 @@ Ext.define('Myapp.view.Product', {
                         xtype: 'numberfield',
                         label: 'Number',
                         value: 1,
-                        minValue: 1,
-                        maxValue: 100,
+//                        minValue: 1,
+//                        maxValue: 100,
                         name: 'number'
                     },
                     {
