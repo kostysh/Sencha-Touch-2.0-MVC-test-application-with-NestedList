@@ -5,10 +5,10 @@
  * @fileOverview MVC App for testing Sencha Touch 2.0 NestedList component
  *
  * @author Constantine V. Smirnov kostysh(at)gmail.com
- * @date 20111209
- * @version 0.5
+ * @date 20120202
+ * @version 0.6
  *
- * @requires touch/sencha-touch-all-debug-w-comments.js (version 2.0 up)
+ * @requires touch/sencha-touch-all-debug.js (version 2.0 Beta)
  * @requires touch/resources/css/sencha-touch.css
  *
  */
@@ -19,5 +19,19 @@ Ext.Loader.setConfig({
 
 Ext.application({
     name: 'Myapp',
-    controllers: ['Main']
+    
+    views: [
+        'Viewport',
+        'Welcomescreen',
+        'Sectionslist',
+        'Product'
+    ],
+    
+    controllers: [
+        'Main'
+    ],
+    
+    launch: function(){
+        Ext.create('Myapp.view.Viewport');
+    }    
 });

@@ -1,43 +1,21 @@
 Ext.define('Myapp.controller.Main', {
     extend: 'Ext.app.Controller',
     
-    views: [
-        'Viewport',
-        'Welcomescreen',
-        'Sectionslist',
-        'Product'
-    ],
-    
     models: [
         'Sections'
     ],
     
-    stores: ['Sections'],
-    
-    refs: [
-        {
-            //build for us this.getViewport() method
-            ref: 'viewport',
-            selector: 'viewportview',
-            xtype: 'viewportview',
-            autoCreate: true
-        },
-        {
-            //this.getProductCard
-            ref: 'productCard',
-            selector: '#productCard'
-        },
-        {
-            //this.getProductTitle()
-            ref: 'productTitle',
-            selector: 'productview > #productTitle'
-        },
-        {
-            //this.getProductFieldset()
-            ref: 'productFieldset',
-            selector: 'productview > #productFieldset'
-        }
+    stores: [
+        'Sections'
     ],
+    
+    config: {
+        refs: {
+            productCard: '#productCard',
+            productTitle: '#productCard > #productTitle',
+            productFieldset: '#productCard > #productFieldset'
+        }
+    },
     
     init: function() {
         
@@ -50,25 +28,10 @@ Ext.define('Myapp.controller.Main', {
                 tap: this.onProductCardCloseBtn
             }
         });
-        
-        this.getViewport();
-        
-//        var sectionsStore = this.getSectionsStore();
-//        sectionsStore.on({
-//            scope: this,
-//            load: 'onSectionsStoreLoad'
-//        });
-//        
-//        sectionsStore.load();
     },
     
-    onSectionsStoreLoad: function() {
-        //show viewport after store loading
-        this.getViewport();
-    },
-    
-    onSectionsLeafItemTap: function(list, index) {
-        var sectionsStore = list.getStore();
+    onSectionsLeafItemTap: function(list, sublist, index) {
+        var sectionsStore = sublist.getStore();        
         var currentRecord  = sectionsStore.getAt(index);
         
         //create new productCard or use existed
