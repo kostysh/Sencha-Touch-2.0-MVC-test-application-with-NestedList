@@ -1,7 +1,8 @@
 Sencha Touch 2.0 MVC application test with NestedList component.
 
-Current version of ST2 (PR3) has some critical bugs.
-Looking forward to next release of ST2. 
+
+version 0.6
+Sample rewrited according to current version of ST2 (Beta 1)
 
 version 0.5:
 Refactoring. Now more simpler. Product listed in NestedList and product details 
