@@ -1,9 +1,5 @@
 Sencha Touch 2.0 MVC application test with NestedList component.
 
-This application required:
-- Sencha Touch SDK 2.0, Current release: http://dev.sencha.com/deploy/sencha-touch-2.0.1-rc.zip
-You must download SDK and place files into the folder /sdk
-
 Known issues: TOUCH-2665 (for now fixed by override App.Tabfix)
 
 version 1.0
